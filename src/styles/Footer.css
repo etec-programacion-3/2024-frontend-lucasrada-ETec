@@ -1,0 +1,9 @@
+footer {
+    position: sticky;
+    margin-top: auto;
+    width: 100%; 
+    text-align: center;
+    padding: 25px;
+    background-color: #c7c7c7;
+    color: black;
+  }

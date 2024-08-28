@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+
+.header {
+  background-color: #F2EFE5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 160px;
+}
+
+.homeTitle {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  background-color: #5e5e5e3d;
+  color: #57575a;
+  border-radius: 16px;
+  margin: 16px;
+  padding: 16px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+  transform-origin: 50% 50%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #889D9F; */
+}
+
+.logo {
+  margin-left: 2rem;
+  width: 64px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.modal {
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.modal-content {
+  position: absolute;
+  visibility: hidden;
+  min-width: 350px;
+  max-width: 550px;
+  width: 90vw;
+  height: auto;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+  transition: all 1s ease-in-out;
+}
+
+.open_signin {
+  visibility: visible;
+  backdrop-filter: blur(8px);
+}
+
+.pop_up {
+  visibility: visible;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.nav > .nav-p {
+  padding: 4px;
+  /* background-color: #d1cfc8; */
+  border-radius: 256px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin-right: 2vw;
+}
+
+.searchButton {
+  margin-right: 2vw;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+.searchButton:hover {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+.searchButton:active {
+  box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
+
+.search {
+  display: flex;
+  width: 80vw;
+  max-width: 600px;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  border-radius: 256px;
+  visibility: hidden;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s cubic-bezier(.27,.83,.57,1.21);
+}
+
+.searchInput {
+  background-color: #ffffffcc;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 5px;
+  width: 90%;
+  height: 50px;
+  border: none;
+  border-radius: 256px 0px 0px 256px;
+}
+
+.searchInput:focus {
+  outline: 0;
+}
+
+.searchModalButton {
+  padding: 4px;
+  font-size: 18px;
+  width: max-content;
+  height: 50px;
+  border: none;
+  border-radius: 0px 256px 256px 0px;
+  background-color: #d4d4d485;
+  cursor: pointer;
+}
+
+.blur_search {
+  visibility: visible;
+  backdrop-filter: blur(8px);
+}
+
+.open_search {
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+@media (max-width:768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .homeTitle {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 0;
+  }
+
+  .nav { 
+    background-color: #4d4d4d;
+    height: auto;
+  }
+
+  .nav > .nav-btn {
+    display: inline-block;
+    height: 50px;
+    background-color: #4d4d4d;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333333e8;
+    height: 0px;
+    transition: all 0.3s ease-in-out;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 1;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    color: #efefef;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 224px;
+    overflow-y: auto;
+  }
+
+  .hover-underline-animation {
+    color: rgb(255, 240, 240);
+  }
+
+  .hover-underline-animation::after {
+    background-color: rgb(255, 240, 240);
+  }
+
+  .header {
+    font-size: 10px;
+  }
+  /* nav-p */
+
+  .searchButton {
+    margin-right: 4vw;
+    fill: #d4d2d2;
+    width: 30px;
+    height: 30px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header > .homeTitle {
+    justify-content: center;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
