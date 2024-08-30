@@ -1,3 +1,5 @@
+import '../styles/Header.css';
+
 const Header = () => {
     return (
         <header class="header">
@@ -14,8 +16,8 @@ const Header = () => {
                 </label>
                 </div>
                 <div class="nav-links">
-                    <a href="./index.html" class="hover-underline-animation">Home</a>
-                    <a href="./product.html" class="hover-underline-animation">Product</a>
+                    <a href="/" class="hover-underline-animation">Home</a>
+                    <a href="/product" class="hover-underline-animation">Product</a>
                     <a href="./cart.html" class="hover-underline-animation">Cart</a>
                     <a href="./contact.html" class="hover-underline-animation">Contact</a>
                 </div>
