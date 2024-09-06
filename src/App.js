@@ -1,6 +1,4 @@
 import './styles/App.css';
-import './styles/Footer.css';
-import './styles/main.css';
 
 import React from "react";
 import {

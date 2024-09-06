@@ -1,10 +1,11 @@
+import '../styles/index.css';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
 
 const Home = () => {
     return (
       <html>
-        <body>
+        <body id='home'>
           <Header />
           <main>
             <div class="musicBanner">

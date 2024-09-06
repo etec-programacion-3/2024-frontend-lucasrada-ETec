@@ -10,22 +10,23 @@ columnas {
     box-sizing: border-box;
 }
 
-main {
+#product > main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color:#eeeff0;
 }
 
-.banner{
+.banner {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
 }
 
-.prod_banner{
+.prod_banner {
     position: relative;
     text-align: center;
     color:black;
 }
+
 .banner_text {  
     position: absolute;
     top: 30%;
@@ -37,33 +38,34 @@ main {
     mix-blend-mode:exclusion; /* Utiliza la mezcla de modos para invertir el color del texto */
 }
 
-
-.btn-primary{
+.btn-primary {
     background-color: #284B63;
-    
 }
 
-.card{
+.card {
     background-color: #F5F5F5;
 }
 
-.list-group-item{
+.list-group-item {
     background-color: #F5F5F5;
 }
 
-.card-precio{
+.card-precio {
     size: 1px;
 }
-.col{
+
+.col {
     margin-right: 0%;
     padding-right: 0%;
 }
-.row{
+
+.row {
     margin-right: 0%;
     padding-right: 0%;
 }
+
 @media (max-width:1200px) {
-    .banner_text{
+    .banner_text {
         position: absolute;
         top: 25%;
         left: 50%;
@@ -71,91 +73,102 @@ main {
         font-size: 250px;
     }
 }
+
 @media (max-width:946px) {
-    .banner_text{
+    .banner_text {
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 200px;
     }
+
     .columnas {
         font-size: 13px;
     }
-    .card-title{
+
+    .card-title {
         font-size:15px;
     }
+
     .btn-primary{
         font-size: 11px;
     }
 }
+
 @media (max-width:755px) {
-    .banner_text{
+    .banner_text {
         position: absolute;
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 150px;
     }
+
     .columnas {
         font-size: 13px;
     }
-    .card-title{
+
+    .card-title {
         font-size:15px;
     }
-    .btn-primary{
+
+    .btn-primary {
         font-size: 11px;
     }
 }
+
 @media (max-width:570px) {
-    .banner_text{
+    .banner_text {
         position: absolute;
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 120px;
     }
+
     .columnas {
         font-size: 13px;
     }
-    .card-title{
+
+    .card-title {
         font-size:15px;
     }
-    .btn-primary{
+
+    .btn-primary {
         font-size: 11px;
     }
 }
+
 @media (max-width:450px) {
-    .banner_text{
+    .banner_text {
         position: absolute;
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 100px;
     }
+
     .columnas {
         font-size: 13px;
     }
-    .card-title{
+
+    .card-title {
         font-size:15px;
     }
-    .btn-primary{
+
+    .btn-primary {
         font-size: 11px;
     }
 }
-
-
-
-
 
 .nunito-sigma {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1000;
     font-style: normal;
-  }
+}
 
-  
 .figtree-sigma {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
