@@ -1,5 +1,5 @@
 import '../styles/Header.css';
-import {SignInModal, openModalSignIn, closeModalSignIn} from '../components/SignInModal.js';
+import {SignInModal, openModalSignIn} from '../components/SignInModal.js';
 
 const Header = () => {
     return (
