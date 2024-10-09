@@ -1,5 +1,6 @@
 import '../styles/Header.css';
 import {SignInModal, openModalSignIn} from '../components/SignInModal.js';
+import {Search, openSearch} from '../components/Search.js';
 
 const Header = () => {
     return (
@@ -24,7 +25,7 @@ const Header = () => {
                         <a href="./contact.html" class="hover-underline-animation">Contact</a>
                     </div>
                     <div class="nav-p">
-                        <img class="searchButton" src={require('../media/search.svg').default} alt="Search" onclick="openSearch()" />
+                        <img class="searchButton" src={require('../media/search.svg').default} alt="Search" onClick={openSearch} />
                         <a onClick={openModalSignIn}>
                             <img src={require('../media/avatar.jpg')} alt="Avatar" class="avatar" />
                         </a>
@@ -32,6 +33,7 @@ const Header = () => {
                 </div>
             </header>
             <SignInModal />
+            <Search />
         </html>
     );
 }
