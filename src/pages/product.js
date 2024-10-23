@@ -1,8 +1,8 @@
 import '../styles/product.css';
-import '../styles/search-bar.css';
 
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
+import Card from '../components/Card.js'
 
 
 const Product = () => {
@@ -10,238 +10,19 @@ const Product = () => {
         <body id='product'>
             <Header />
             <main>
-                <div class="prod_banner">
-                    <img class="banner" src={require('../media/headphoneswb.jpg')} alt="Image didnt load" width="100%" />
-                    <b class="banner_text" id="bannertext">AUDIO</b>
+                <div className="prod_banner">
+                    <img className="banner" src={require('../media/headphoneswb.jpg')} alt="" width="100%" />
+                    <b className="banner_text" id="bannertext">AUDIO</b>
                 </div>
                 {/* Inicio de barra de busqueda https://www.youtube.com/watch?v=YXalp9Fr4-4 */}
                 
-                <div class="searchBar">
-                    {/* Inicio de dropdown1 */}
-                    
-                    <div class="dropdown">
-                        <div class="uppersearch">
-                        <div id="drop-text" class="dropdown-text">
-                        <span>Todo audio</span>
-                        <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-                        <ul id="dropList" class="dropdown-list">
-                            <li class="dropdown-list-item">Todo audio</li>
-                            <li class="dropdown-list-item">Audio neutro</li>
-                            <li class="dropdown-list-item">Comunicaciones</li>
-                            <li class="dropdown-list-item">Gaming</li>
-                        </ul>
-                    </div>
-                    
-                    {/* Fin de dropdown1 */}
-                    {/* Inicio de dropdown2 */}
-                    
-                    <div class="dropdown">
-                        <div class="uppersearch">
-                        <div id="drop-text2" class="dropdown-text2">
-                        <span>Todo audio</span>
-                        <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-                        <ul id="dropList2" class="dropdown-list">
-                            <li class="dropdown-list-item">Todo audio</li>
-                            <li class="dropdown-list-item">Audio neutro</li>
-                            <li class="dropdown-list-item">Comunicaciones</li>
-                            <li class="dropdown-list-item">Gaming</li>
-                        </ul>
-                    </div>
-                    
-                    {/* Fin de dropdown2 */}
-                    {/* Inicio de input de busqueda */}
-                        <div class="uppersearch">
-                            <div class="search-box">
-                                <input type="text" id="search-input" placeholder="Busque sus audifonos..." />
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                        </div>
-                    {/* Fin de input de busqueda */}
-                </div>
-
-
                 {/* Fin de barra de busqueda */}
-                <div class="columnas">
-                    <div class="row row-cols-3 row-cols-md-4 g-5 wow fadeInUp" >
-                        {/* CARTA INDIVIDUAL */}
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                src={require('../media/md_starfield2_4.jpg')}
-                                class="card-img-top"
-                                alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                        <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary"
-                                        >Mirar analisis</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        {/* CARTA INDIVIDUAL */}
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                src={require('../media/md_starfield2_4.jpg')}
-                                class="card-img-top"
-                                alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                        <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary"
-                                        >Mirar analisis</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                src={require('../media/md_starfield2_4.jpg')}
-                                class="card-img-top"
-                                alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                        <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary"
-                                        >Mirar analisis</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                src={require('../media/md_starfield2_4.jpg')}
-                                class="card-img-top"
-                                alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                        <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary"
-                                        >Mirar analisis</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                src={require('../media/md_starfield2_4.jpg')}
-                                class="card-img-top"
-                                alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                        <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary"
-                                        >Mirar analisis</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                src={require('../media/md_starfield2_4.jpg')}
-                                class="card-img-top"
-                                alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                        <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary"
-                                        >Mirar analisis</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                    src={require('../media/md_starfield2_4.jpg')}
-                                    class="card-img-top"
-                                    alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                    <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary">Mirar analisis</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img
-                                    src={require('../media/md_starfield2_4.jpg')}
-                                    class="card-img-top"
-                                    alt="Image didnt load"
-                                />
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">9/10 Audio neutro (?)</li>
-                                </ul>
-                                <div class="card-body">
-                                    <h5 class="card-title">Moondrop Starfield 2</h5>
-                                    <p class="card-text">Pequeña descripción</p>
-                                    <ul class="list-group list-group-flush">
-                                    <b>199 USD</b>
-                                    </ul>
-                                    <a href="./carrito.html" class="btn btn-primary">Mirar analisis</a>
-                                </div>
-                            </div>
-                        </div>
+                <div className="products">
+                    <div className="row wow fadeInUp" >
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
                     </div>
                 </div>
             </main>
@@ -295,11 +76,11 @@ bannertext.addEventListener("mouseleave", function() {
 });
 
 dropText.onclick = function() {
-    dropList.classList.toggle("show");
+    dropList.classNameList.toggle("show");
 };
 
 dropText2.onclick = function() {
-    dropList2.classList.toggle("show2");
+    dropList2.classNameList.toggle("show2");
 };
 
 */}

@@ -9,13 +9,13 @@ const Home = () => {
           <Header />
           <main>
             <div class="musicBanner">
-                <img id="newReleaseImage" class="newReleaseAlbum" src={require("../media/ttpd.jpg")} alt="The Tortured Poets Department" onmouseover="imageFocus(this, 1.04)" onmouseout="imageFocusOut(this)" />
+                <img id="newReleaseImage" class="newReleaseAlbum" src={require("../media/Holidays.jpg")} alt="The Tortured Poets Department" onmouseover="imageFocus(this, 1.04)" onmouseout="imageFocusOut(this)" />
                 <div>
                     <p id="album" class="album">
-                        The Tortured Poets Department
+                        Holidays
                     </p>
                     <p class="artist">
-                        Taylor Swift
+                        Conan Gray
                     </p>
                     <div id="releaseDate" class="releaseDate">19/04/2024</div>
                 </div>

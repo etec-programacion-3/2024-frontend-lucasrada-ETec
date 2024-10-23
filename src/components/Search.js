@@ -23,7 +23,7 @@ const Search = () => {
             </form>
         </div>
     );
-}
+};
 
 const openSearch = () => {
     const modal = document.getElementById("modalSearch");
