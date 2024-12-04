@@ -1,0 +1,28 @@
+.col {
+    margin-right: 0;
+}
+
+.card {
+    background-color: #F5F5F5;
+    --bs-border-radius: 24px;
+}
+
+.btn-primary {
+    background-color: #284B63;
+    border-radius: 8px !important;
+    margin-top: 8px;
+}
+
+.list-group-item {
+    background-color: #F5F5F5;
+}
+
+.card-precio {
+    size: 1px;
+}
+
+@media (max-width:768px) {
+    .card {
+        padding: 4px;
+    }
+}

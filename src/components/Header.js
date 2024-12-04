@@ -1,0 +1,43 @@
+import '../styles/Header.css';
+/* import {SignInModal, openModalSignIn} from '../components/SignInModal.js'; */
+import './AuthModal.js';
+import {Search, openSearch} from '../components/Search.js';
+import { AuthModal, openAuthModal } from './AuthModal.js';
+
+const Header = () => {
+    return (
+        <html>
+            <header class="header">
+                <h1 class="homeTitle">Audioteca</h1>
+                <div class="nav">
+                    <input type="checkbox" id="nav-check" />
+                    <div class="nav-header">
+                    </div>
+                    <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    </div>
+                    <div class="nav-links">
+                        <a href="/" class="hover-underline-animation">Home</a>
+                        <a href="/product" class="hover-underline-animation">Product</a>
+                        <a href="./cart" class="hover-underline-animation">Cart</a>
+                        <a href="./about" class="hover-underline-animation">About</a>
+                    </div>
+                    <div class="nav-p">
+                        <img class="searchButton" src={require('../media/search.svg').default} alt="Search" onClick={openSearch} />
+                        <a onClick={openAuthModal}>
+                            <img src={require('../media/avatar.jpg')} alt="Avatar" class="avatar" />
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <AuthModal />
+            <Search />
+        </html>
+    );
+}
+
+export default Header;

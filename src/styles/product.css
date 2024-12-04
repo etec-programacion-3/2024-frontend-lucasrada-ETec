@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#product > main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#eeeff0;
+}
+
+.banner {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+}
+
+.prod_banner {
+    position: relative;
+    text-align: center;
+    color:black;
+}
+
+.banner_text {  
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Figtree", sans-serif;
+    font-size: 400px;
+    color: #d6d6d6d5;
+    mix-blend-mode: exclusion;
+}
+
+.products {
+    margin: 1vw;
+}
+
+.nunito-sigma {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.figtree-sigma {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@media (max-width:768px) {
+    .banner_text {
+        font-size: 140px;
+    }
+
+    .products {
+        margin: 2vw;
+    }
+}
